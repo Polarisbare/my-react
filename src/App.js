@@ -2,16 +2,22 @@
  * @Author: Lv Jingxin lv510987@163.com
  * @Date: 2024-01-02 18:01:41
  * @LastEditors: Lv Jingxin lv510987@163.com
- * @LastEditTime: 2024-01-04 17:15:57
+ * @LastEditTime: 2024-01-11 14:59:36
  * @FilePath: /my-app/src/App.js
  * @Description: 颜色样式
  */
-import "./index.css"
+// 受控表绑定单
+
+import { useState } from "react";
+
+// 声明react状态
+
+// 核心绑定流程
 function App() {
+  const [value,setValue] = useState('')
   return (
     <div className="App">
-      <div style={{color:'red'}}>nihao</div>
-      <div className="foo">hhh </div>
+      <input value={value} onChange={(e)=>setValue(e.target.value)} type="text"></input>
      </div>
   );
 }
