@@ -4,13 +4,12 @@ import { useState } from "react";
  * @Author: Lv Jingxin lv510987@163.com
  * @Date: 2024-01-02 18:01:41
  * @LastEditors: Lv Jingxin lv510987@163.com
- * @LastEditTime: 2024-01-19 16:06:22
+ * @LastEditTime: 2024-01-19 16:07:02
  * @FilePath: /my-app/src/App.js
- * @Description: 子传父
+ * @Description: 兄弟传值
  * 
- * 核心概念：  子组件中调用父组件中的函数并传递实参数
+ * 核心概念：  子传父-----父传子   状态提升   传到共同的父组件
  */
-
 function ComA({onGetAName}){
   const name = "this is A"
   return (
